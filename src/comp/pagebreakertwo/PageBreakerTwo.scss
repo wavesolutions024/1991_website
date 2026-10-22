@@ -1,0 +1,13 @@
+.pagebreaker {
+  width: 100%;
+
+  &.pagebreakertwo{
+    transform: rotate(180deg);
+  }
+
+  .image {
+    width: 100%;
+    margin-top: -50px;
+    position: relative;
+  }
+}

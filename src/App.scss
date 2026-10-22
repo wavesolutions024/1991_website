@@ -1,0 +1,83 @@
+:root {
+  --white: #ffffff;
+  --accent: rgb(255, 204, 0);
+  --accent2: #bb976d;
+  --bg: #F8F6F2;
+  --surface: #ffffff;
+  --surface-alt: #f8f7ff;
+  --max-width: 1400px;
+  --unit: 14px;
+  --text: #272727;
+  --shadow: 0px 0px 15px #00000022;
+  --trans: all 0.3s ease-in-out;
+  --border: #dadada;
+  
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Doppio+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+body {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+
+  // color: var(--accent);
+}
+
+
+
+.parent {
+  width: 100%;
+
+  .cont {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0px 10px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: "Doppio One", sans-serif;
+}
+
+p {
+  color: rgb(49, 49, 49);
+}
+
+p,
+a {
+ font-family: "Josefin Sans", sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.bg-img-cover {
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+.bg-img-contain {
+  background-position: center center !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+
+
+
+
+

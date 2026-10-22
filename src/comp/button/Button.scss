@@ -1,0 +1,49 @@
+.btn {
+  padding: 10px 20px;
+  background-color: var(--accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  position: relative;
+  width: fit-content;
+  overflow: hidden;
+
+
+
+  &.btn2 {
+    background-color: transparent;
+    border: 1px solid var(--white);
+
+    .btn_text,
+    .text2 {
+      color: var(--white);
+      text-transform: uppercase;
+    }
+  }
+
+  .btn_text {
+    text-transform: uppercase;
+     transition: var(--trans);
+  }
+
+  .text2 {
+    position: absolute;
+    top: 100%;
+    text-transform: uppercase;
+    transition: var(--trans);
+  }
+
+  &:hover {
+    .text2 {
+      top: 50%;
+      transform: translateY(-50%);
+      transition: var(--trans);
+    }
+
+    .btn_text {
+      transform: translateY(-30px);
+      transition: var(--trans);
+    }
+  }
+}
