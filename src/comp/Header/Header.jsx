@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import "./Header.scss";
-import { FiHeart } from "react-icons/fi";
-import { BsBagCheck } from "react-icons/bs";
+
 import logo from "../../assets/logo.png";
 import { FaInstagram } from "react-icons/fa";
 import { MdOutlineCall } from "react-icons/md";
+import { Link } from "react-router-dom";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -35,7 +35,7 @@ const Header = () => {
     },
     {
       name: "About 1991",
-      link: "/",
+      link: "/about",
     },
     {
       name: "Services",
@@ -68,7 +68,9 @@ const Header = () => {
         ></div>
         <div class="header_cont cont">
           <div class="left_side">
+            <Link to="/">
             <img src={logo} alt="" />
+            </Link>
 
             <div className={`hamburger ${isOpen ? "active" : ""}`}>
               <label>
@@ -110,10 +112,10 @@ const Header = () => {
           class={isOpen ? "main_header_section active" : "main_header_section"}
         >
           {navs?.map((item, index) => (
-            <a href="" key={index}>
+            <Link to={item.link} key={index} onClick={()=>setIsOpen(false)}>
               <p>{item.name}</p>
               {/* <span>+</span> */}
-            </a>
+            </Link>
           ))}
         </div>
       </div>

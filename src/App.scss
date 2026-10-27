@@ -5,7 +5,7 @@
   --bg: #F8F6F2;
   --surface: #ffffff;
   --surface-alt: #f8f7ff;
-  --max-width: 1400px;
+  --max-width: 1600px;
   --unit: 14px;
   --text: #272727;
   --shadow: 0px 0px 15px #00000022;
@@ -55,10 +55,11 @@ h6 {
 
 p {
   color: rgb(49, 49, 49);
+  line-height: 130%;
 }
 
 p,
-a {
+a ,span{
  font-family: "Josefin Sans", sans-serif;
 }
 

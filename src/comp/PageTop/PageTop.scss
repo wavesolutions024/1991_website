@@ -1,0 +1,25 @@
+.page_top{
+    width: 100%;
+    height: 400px;
+    background:linear-gradient(to top, rgba(0, 0, 0, 0.312), black),url("../../assets/page_top_new.png");
+
+ .page_top_cont{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--unit);
+
+
+    h1{
+        color: var(--white);
+    }
+
+    p{
+        max-width: 50ch;
+        color: white;
+    }
+
+ }   
+}

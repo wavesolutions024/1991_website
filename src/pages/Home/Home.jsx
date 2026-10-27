@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import { Autoplay, FreeMode,Navigation } from "swiper/modules";
-import * as CountUpModule from "react-countup";
+
 import img1 from "../../assets/ttm1.jpeg";
 import img2 from "../../assets/ttm2.jpeg";
 import img3 from "../../assets/ttm3.jpeg";
